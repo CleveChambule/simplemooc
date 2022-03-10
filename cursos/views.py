@@ -5,7 +5,7 @@ from .models import Curso
 def cursos(request):
     cursos = Curso.objects.all()
     context = {
-        'cursos' : cursos
+        'cursos': cursos
     }
     return render(request, 'courses/index.html', context)
 
